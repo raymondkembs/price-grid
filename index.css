@@ -15,15 +15,15 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Karla", sans-serif;
-    background: var(--lightGray)
+    background: var(--lightGray);
+    height: 100vh;
 }
 .con{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
     width: 50%;
-    height: 50%; 
+    height: auto; 
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -112,6 +112,9 @@ body{
     color: var(--lightGray);
 }
 @media (max-width: 800px) {
+    body{
+        height: auto;
+    }
     .con{
         margin-top: 40px;
         margin-bottom: 50px;
