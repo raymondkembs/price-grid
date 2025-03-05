@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Anybody:ital,wght@1,100;1,200&family=Archivo:ital,wght@0,300;1,100&family=Bangers&family=Comme:wght@200;300;400;500;600&family=Encode+Sans:wght@200;300;400;500;600;700&family=Indie+Flower&family=Inter:wght@200&family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,500&family=Karla:wght@300&family=Lavishly+Yours&family=Montserrat:wght@300&family=Passion+One:wght@700&family=Poppins:wght@300;400;500&family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,300&family=Shadows+Into+Light&family=Wix+Madefor+Text:wght@400;500;600;700&family=Work+Sans:wght@300&family=Ysabeau:wght@400;500;600&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla", sans-serif;
+    background: var(--lightGray)
+}
+.con{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    width: 50%;
+    height: 50%; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+.con > div{
+    padding: 30px;
+}
+.box1{
+    grid-column: span 2;
+}
+.box1 h1{
+    color: var(--cyan);
+    margin-bottom: 20px;
+}
+.box1 > p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1 .titleOne{
+    color: var(--brightYellow);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.box1 .para{
+    color: var(--grayishBlue);
+    line-height: 25px;
+    font-size: 16px;
+}
+.titleTwo{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.box2{
+    color: white;
+    background: var(--cyan);
+}
+.box2 > *{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.box2 .bold{
+    font-weight: 600;
+    font-size: 30px;
+}
+.box2 .boldtwo{
+    margin-bottom: 20px;
+}
+.box2 .lessbold{
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--lightGray);
+}
+.box2 .mybutton{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.09);
+    background: var(--brightYellow);
+}
+.box3{
+    background: var(--cyan);
+    opacity: 0.8;
+}
+.box3con{
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 90%;
+    height: 100%;
+}
+.box3con .titleThree{
+    padding-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+.box3con .paraTwo{
+    line-height: 24px;
+    color: var(--lightGray);
+}
+@media (max-width: 800px) {
+    .con{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 70%;
+    }
+    .box2{
+        grid-column: span 3;
+    }
+    .box3{
+        grid-column: span 3;
+    }
+}
+@media (max-width: 500px) {
+    .con{
+        width: 90%;
+    }
+}
